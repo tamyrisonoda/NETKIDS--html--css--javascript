@@ -1,0 +1,121 @@
+:root{
+    --vermelho: #E50914;
+    --preta: #141414;
+    --rosa: #794156;
+    --azul: #1c2229;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Elementos base*/
+
+body{
+background-color: var(--azul);
+font-family: 'Arial', Times, serif;
+color: white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   
+}
+.logo{
+   
+    margin: -60px;
+    padding: 10px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 110px;
+}
+
+
+header nav a:hover{ /*Passou o mouse, a escrita muda de cor.*/
+    color: #fff;
+}
+
+/*Filme principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0, .50), rgba(158, 109, 109, 0.5)100%)); /*gradiente: pede duas cores*/
+    background-image: url(https://image.tmdb.org/t/p/original/sVoc8UkF2a0SJOsMDGad0Kv8p4m.jpg);
+	background-size:100%;
+    background-position: center;
+
+    height: 400px;
+   
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.filme-principal .Descrição{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.título{
+    margin-top: 5%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botão{
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botão:hover{
+    background-color: white;
+    color: black;
+}
+
+.botão i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 70%;
+
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carousel-filmes{
+    margin-top: 5px;
+}
+
+.netkids-logo{
+    width: 50%;
+padding-left:20px;
+margin-top: -50px;
+
+}
